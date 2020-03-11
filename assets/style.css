@@ -6,6 +6,16 @@ body{
 
 .centerImage {
     position:absolute;
-    top:35%;
+    top:45%;
     left:13%;
   }
+
+  .wrapper{
+     position: absolute;
+     top: 65%;
+     left:45%
+  }
+
+.btnColor{
+    color: rgba(14, 236, 44, 0.897);
+}
