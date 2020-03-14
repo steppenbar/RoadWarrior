@@ -1,5 +1,5 @@
 body{
-    background-image: url(/assets/images/conanamps.jpg);
+    background-image: url(./images/conanamps.jpg);
     background-size: cover;
 }
 
@@ -7,7 +7,10 @@ body{
 .centerImage {
     position:absolute;
     top:45%;
-    left:13%;
+    left:1%;
+   height: auto;
+  width: 150px;
+   
   }
 
   .wrapper{
