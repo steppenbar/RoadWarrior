@@ -15,25 +15,65 @@
 
 <body>
 
-    <!--Add Banner with site title-->
+   
 
-    <a href="https://fontmeme.com/retro-fonts/" class="centerImage"><img
-            src="https://fontmeme.com/permalink/200311/bd1b350b2b828bfe26fb92a7732fc384.png" alt="retro-fonts"
-            border="0"></a>
+   
+<div class="hero">
 
-    <div class="wrapper">
-        <a class="waves-effect waves-light btn" class="btnColor"><i class="material-icons left"></i>Sign Up</a>
-        <a class="waves-effect waves-light btn"><i class="material-icons right"></i>Log In</a>
+     <!--Add Banner with site title-->
+    <a id="banner" href="https://fontmeme.com/retro-fonts/" class="centerImage"><img
+        src="https://fontmeme.com/permalink/200311/bd1b350b2b828bfe26fb92a7732fc384.png" alt="retro-fonts"
+        border="0"></a>
+
+
+    <div class="form-box">
+        
+        <div class="button-box">  
+        <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+
+
+    </form>
+    <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="email" class="input-field" placeholder="Email ID" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+
+
+</form>
     </div>
-
-
-    <!--Add Larghe background picture-->
-
-    <!--Add Log in and Sign Up buttons-->
-
+</div>
+  
 
 
     <footer>Copyright Art Aragon 2020</footer>
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("register")
+        var z = document.getElementById("btn")
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
